@@ -1,7 +1,7 @@
 services:
   node:
     build:
-      context: ./node
+      context: ./frontend
       dockerfile: Dockerfile
     container_name: front
     ports:
@@ -10,12 +10,12 @@ services:
     tty: true
     volumes:
       - type: bind
-        source: ./node
+        source: ./frontend
         target: /app
 
   python:
     build:
-      context: ./python
+      context: ./backend
       dockerfile: Dockerfile
     container_name: back
     ports:
@@ -24,6 +24,6 @@ services:
     tty: true
     volumes:
       - type: bind
-        source: ./python
+        source: ./backend
         target: /app
 
