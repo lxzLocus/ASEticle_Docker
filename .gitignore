@@ -9,12 +9,12 @@
 
 #backend以下全て除外
 /backend/*
-#除外ルールから外す外すファイル，ディレクトリ
+#除外ルールから外すファイル，ディレクトリ
 !/backend/Dockerfile
 !/backend/requirements.txt
 
 #frontend以下全て除外
 /frontend/*
-#除外ルールから外す外すファイル，ディレクトリ
+#除外ルールから外すファイル，ディレクトリ
 !/frontend/Dockerfile
 
