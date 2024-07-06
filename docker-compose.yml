@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: front
     ports:
-      - "3000:3000"
+      - "49513:49513"
     restart: always
     tty: true
     volumes:
@@ -19,7 +19,7 @@ services:
       dockerfile: Dockerfile
     container_name: back
     ports:
-      - "5000:5000"
+      - "49515:49515"
     restart: always
     tty: true
     volumes:
